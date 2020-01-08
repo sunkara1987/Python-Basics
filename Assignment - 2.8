@@ -1,0 +1,10 @@
+inp = []
+length = []
+for i in range(0, int(input('enter how many words: '))):
+    inp.append(input('enter word ' + str(i+1) +': '))
+
+print('the length of the words is as follows: ')
+for i in inp:
+    length.append(len(i))
+print(inp)
+print(length)
