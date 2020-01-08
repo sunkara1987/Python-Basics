@@ -1,0 +1,14 @@
+class Triangle:
+    def __init__(self,a,b,c):
+        self.a = a
+        self.b = b
+        self.c = c
+    def area(self):
+        s = (self.a + self.b + self.c)/2
+        return ((s*(s-self.a)*(s-self.b)*(s-self.c))**0.5)
+
+a = int(input('enter length of side 1: '))
+b = int(input('enter length of side 2: '))
+c = int(input('enter length of side 3: '))
+kutty=Triangle(a, b, c)
+print('area of the triangle is: ',kutty.area())
