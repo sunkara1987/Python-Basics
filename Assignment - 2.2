@@ -1,0 +1,12 @@
+def myfilter(char): 
+    vowels = ['a', 'e', 'i', 'o', 'u'] 
+    if (char in vowels): 
+        return True
+    else: 
+        return False
+letters = list(input('enter any string to check vowels: '))
+inp_vowels=[]
+for i in range(0, len(letters)):
+    if myfilter(letters[i]) is True:
+        inp_vowels.append(letters[i])
+print(inp_vowels)
