@@ -1,0 +1,15 @@
+def alexandre(list1):
+    list3=[]
+    for i in list1:
+        list2=[]
+        for j in range(0, len(list1)):
+            list2.append(i**j)
+        list3.append(list2)
+    return(list3)
+list1=[]
+vector_size= int(input('enter the size of vector: '))
+for n in range(0, vector_size):
+    list1.append(int(input('enter the value ' + str(n + 1) + ': ')))
+al = alexandre(list1)
+for i in al:
+    print(i)
