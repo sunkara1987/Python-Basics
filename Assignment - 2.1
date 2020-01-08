@@ -1,0 +1,6 @@
+def myreduce(square, value):
+    return square(value)
+
+square = (lambda value: value * value)
+
+print(myreduce(square, int(input("enter value for square: "))))
