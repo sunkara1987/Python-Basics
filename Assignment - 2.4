@@ -1,0 +1,10 @@
+inp = []
+for i in range(0, int(input('enter how many words: '))):
+    inp.append(input('enter word ' + str(i+1) +': '))
+length = 0
+longest = ' '
+for i in inp:
+    if len(i) > length:
+        longest = i
+        length = len(i)
+print('longest word is ' + longest)
