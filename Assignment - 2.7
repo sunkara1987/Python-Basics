@@ -1,0 +1,9 @@
+inp = []
+for i in range(0, int(input('enter how many words: '))):
+    inp.append(input('enter word ' + str(i+1) +': '))
+max_len = int(input('enter long length: '))
+print('the words which are longer than' + str(max_len) + 'characters:')
+for i in inp:
+    if len(i) > max_len:
+        print('longest word is ' + i)
+    
